@@ -1,0 +1,43 @@
+table {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+@page {
+    margin: 2cm;
+}
+
+/* target the first page only */
+@page :first {
+    margin-top: 6cm;
+}
+
+/* target left (even-numbered) pages only */
+@page :left {
+    margin-right: 4cm;
+}
+
+/* target right (odd-numbered) pages only */
+@page :right {
+    margin-left: 4cm;
+}
+#print .client .invoice-number {
+    background: #f5f5f5 !important;
+}
+#print .client {
+    width: 100%;
+}
+#print .client .invoice-number .main-title {
+    text-align: center !important;
+    width: 100% !important;
+    background: #ababab !important;
+}
+#print .client .invoice-number .title {
+    width: 50%;
+    background: #cacaca;
+    text-align: right;
+    padding: 6px;
+    padding-right: 5%;
+}
+#print .client .invoice-number .number {
+    width: 50%;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RAISE</title>
+        <base href="/" />
+
+        <meta charset="utf-8" />
+        <meta name="description" content="Material design admin template with pre-built apps and pages" />
+        <meta name="keywords" content="HTML,CSS,AngularJS,Angular,Angular 2,Angular 4,Angular 5,Angular 6,Angular 7,Material,Material 2" />
+        <meta name="author" content="Withinpixels" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <script src="assets/scripts/ckeditor.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <!-- <link href="assets/ng-zorro-antd.min.css" rel="stylesheet" /> -->
+        <!-- <link href="assets/icons/meteocons/style.css" rel="stylesheet" /> -->
+        <link href="assets/icons/material-icons/outline/style.css" rel="stylesheet"/>
+        <!-- <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet" /> -->
+        <!-- <link href="assets/ie-style.css" rel="stylesheet" /> -->
+        <!-- <link href="assets/print-style.css" rel="stylesheet" media="print" /> -->
+
+        <link id="theme" rel="stylesheet" />
+        <!--<link href="assets/DragonBoat.css" rel="stylesheet">-->
+        <!--<link href="assets/TombSweeping.css" rel="stylesheet">-->
+        <!-- build:css(.tmp) assets/ie-style.css -->
+        <!--[if IE]>
+            <link href="assets/ie-style.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!-- endbuild -->
+        <!-- FUSE Splash Screen CSS -->
+        <style type="text/css">
+            #fuse-splash-screen {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #222036;
+                z-index: 99999;
+                pointer-events: none;
+            }
+
+            #fuse-splash-screen .center {
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .float1 {
+                position: relative;
+                -webkit-animation: floatBubbleA 4s linear infinite;
+                animation: floatBubbleA 4s linear infinite;
+            }
+            @-webkit-keyframes floatBubbleA {
+                0% {
+                    top: 0%;
+                }
+                80% {
+                    top: 38%;
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+                100% {
+                    top: 38%;
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes floatBubbleA {
+                0% {
+                    top: 0%;
+                }
+                80% {
+                    top: 38%;
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+                100% {
+                    top: 38%;
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            .float2 {
+                position: relative;
+                -webkit-animation: floatBubbleB 4s linear infinite;
+                animation: floatBubbleB 4s linear infinite;
+            }
+            @-webkit-keyframes floatBubbleB {
+                0% {
+                    bottom: 0%;
+                }
+                80% {
+                    bottom: 38%;
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+                100% {
+                    bottom: 38%;
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes floatBubbleB {
+                0% {
+                    bottom: 0%;
+                }
+                80% {
+                    bottom: 38%;
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+                100% {
+                    bottom: 38%;
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            #loading {
+                animation: slow 1.5s linear 1.5s, fast 1s linear 1s, slow2 1s linear 1s;
+                animation-iteration-count: infinite;
+                -webkit-animation: slow 1.5s linear 1.5s, fast 1s linear 1s, slow2 1s linear 1s;
+                -webkit-animation-iteration-count: infinite;
+            }
+
+            @-webkit-keyframes rotating /* Safari and Chrome */ {
+                from {
+                    -webkit-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                to {
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes rotating {
+                from {
+                    -ms-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                to {
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            .rotating {
+                -webkit-animation: rotating 2s linear infinite;
+                -moz-animation: rotating 2s linear infinite;
+                -ms-animation: rotating 2s linear infinite;
+                -o-animation: rotating 2s linear infinite;
+                animation: rotating 2s linear infinite;
+            }
+            @keyframes jump {
+                0% {
+                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+                }
+                40% {
+                    transform: translate3d(0, 20%, 0) scale3d(0.7, 1.3, 1);
+                }
+                100% {
+                    transform: translate3d(0, 100%, 0) scale3d(1.5, 0.7, 1);
+                }
+            }
+            .jump {
+                transform-origin: 50% 50%;
+                animation: jump 2s linear alternate 2;
+            }
+        </style>
+        <!-- / FUSE Splash Screen CSS -->
+    </head>
+
+    <body class="FestivalTheme">
+        <!-- FUSE Splash Screen -->
+        <fuse-splash-screen id="fuse-splash-screen">
+            <img class="text-center" style="position: absolute; left: 35%; top: 35%" src="assets/images/logos/Raise_Logo2.gif" />
+            <!--<div class="center">
+            
+                        <img class="float text-center"  width="6%" style="position: absolute;left: 47%;top: 17%;" src="assets/images/logos/Raise-name.png">
+                        
+                </div> -->
+
+            <!--<img class="float1  text-center" style="position: absolute;left: 44%;top: 0px;" src="assets/images/logos/Raise_Logo_Top.png">
+             <img class="float2 text-center" style="position: absolute;bottom:0px;right:44%;" src="assets/images/logos/Raise_Logo_Btm.png">
+                 <div class="center">
+            
+                        <img class="float text-center"  width="6%" style="position: absolute;left: 47%;top: 17%;" src="assets/images/logos/Raise-name.png">
+                        
+                </div> -->
+            <!-- <div class="center text-center">
+                        <img width="100%" src="assets/images/logos/logo-load.gif">
+                </div> -->
+        </fuse-splash-screen>
+        <!-- / FUSE Splash Screen -->
+
+        <app></app>
+    </body>
+</html>
