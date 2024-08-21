@@ -1,0 +1,13 @@
+[0502/160123.935:ERROR:icu_util.cc(139)] Couldn't mmap icu data file
+[0502/160123.995:FATAL:v8_initializer.cc(318)] Couldn't mmap v8 natives data file, status code is 2
+[0510/143222.672:FATAL:v8_initializer.cc(318)] Couldn't mmap v8 natives data file, status code is 2
+[0514/171850.315:ERROR:icu_util.cc(139)] Couldn't mmap icu data file
+[0515/110825.318:ERROR:icu_util.cc(139)] Couldn't mmap icu data file
+[0524/112215.074:ERROR:icu_util.cc(139)] Couldn't mmap icu data file
+[1020/101241.823:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[1108/143049.343:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[1108/182811.262:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[1109/152549.694:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系统找不到指定的路径。 (0x3)
+[0209/092021.356:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: 管道已结束。 (0x6D)
+[0209/105632.045:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: 管道已结束。 (0x6D)
+[0209/120716.079:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: 管道已结束。 (0x6D)
